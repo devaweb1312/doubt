@@ -39,6 +39,8 @@ const generateUI = (articles) => {
 const getNews = async () => {
   container.innerHTML = "";
   let response = await fetch(requestURL);
+  console.log(response);
+  console.log("Error in getnews");
   if (!response.ok) {
     alert("Data unavailable at the moment. Please try again later");
     return false;
